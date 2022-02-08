@@ -1,8 +1,8 @@
 ﻿// 1. У любого пользователей будет набор данных qualities & professions
 // 2. Они равны mock данным
 
-const Profession = require("../models/Professions");
-const Qualities = require("../models/Qualities");
+const Profession = require("../models/Profession");
+const Qualities = require("../models/Quality");
 const professionMock = require("../mock/professions.json");
 const qualitiesMock = require("../mock/qualities.json");
 
