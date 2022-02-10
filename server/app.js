@@ -28,4 +28,4 @@ async function start() {
   }
 }
 
-start().then(() => {});
+start();

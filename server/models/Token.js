@@ -2,10 +2,10 @@ const { Schema, model } = require("mongoose");
 
 const schema = new Schema(
   {
-    userId: { type: Schema.Types.ObjectId, required: true, ref: "User" },
+    user: { type: Schema.Types.ObjectId, required: true, ref: "User" },
     accessToken: { type: String },
     refreshToken: { type: String },
-    exporesIn: { type: Number }
+    expiresIn: { type: Number }
   },
   { timestamps: true }
 );
