@@ -16,11 +16,10 @@ async function start() {
     await mongoose.connection.once("open", () => {
       initDatabase();
     });
-
     await mongoose.connect(config.get("mongoUrl"));
     console.log(chalk.green("MongoDB connected"));
 
-    app.listen(8080, () => {
+    app.listen(PORT, () => {
       console.log(chalk.green(`Server has been  starter on port ${PORT}`));
     });
   } catch (error) {
