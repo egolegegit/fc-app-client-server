@@ -22,7 +22,7 @@ COPY server /app
 
 COPY --from=client /app/client/build /app/client
 
-EXPOSE 8080
+EXPOSE 80
 
 # heroku cmd not root user
 RUN adduser -D user
