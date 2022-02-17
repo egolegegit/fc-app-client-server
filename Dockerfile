@@ -22,6 +22,10 @@ COPY server /app
 
 COPY --from=client /app/client/build /app/client
 
-EXPOSE 8080
+#EXPOSE 8080
+
+# heroku cmd not root user
+RUN adduser -D user
+USER user
 
 CMD ["npm","start"]
