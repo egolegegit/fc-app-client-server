@@ -8,6 +8,7 @@ const initDatabase = require("./startup/initDatabase");
 const routes = require("./routes");
 const PORT = process.env.PORT && 8080;
 const app = express();
+console.log("PORT", PORT);
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
