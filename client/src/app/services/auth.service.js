@@ -1,9 +1,9 @@
 import axios from "axios";
 import localStorageService from "./localStorage.service";
-import config from "../config.json";
+import baseUrl from "../services/baseUrl";
 
 const httpAuth = axios.create({
-    baseURL: config.apiEndpoint + "/auth/",
+    baseURL: baseUrl + "/auth/",
     params: {
         key: process.env.REACT_APP_FIREBASE_KEY
     }
