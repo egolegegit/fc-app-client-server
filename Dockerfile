@@ -28,4 +28,6 @@ COPY --from=client /app/client/build /app/client
 RUN adduser -D user
 USER user
 
-CMD ["npm","start","--host=0.0.0.0", "--port=$PORT"]
+#CMD ["npm","start"]
+#CMD ["npm","start","--host=0.0.0.0", "--port=$PORT"]
+CMD ["npm","start","--bind 0.0.0.0:$PORT"]
