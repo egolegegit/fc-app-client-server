@@ -6,7 +6,7 @@ const cors = require("cors");
 const path = require("path");
 const initDatabase = require("./startup/initDatabase");
 const routes = require("./routes");
-const PORT = config.get("port") && 8080;
+const PORT = process.env.PORT && 8080;
 const app = express();
 
 app.use(express.json());
