@@ -1,4 +1,4 @@
 {
-  "apiEndpoint": "https://fc-client-server.herokuapp.com/api",
+  "apiEndpoint": "https://fc-client-server-docker.herokuapp.com/api",
   "isFireBase": false
 }
