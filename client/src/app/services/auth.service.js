@@ -1,6 +1,6 @@
 import axios from "axios";
 import localStorageService from "./localStorage.service";
-import baseurl from "./baseurl";
+import baseurl from "../services/baseurl";
 
 const httpAuth = axios.create({
     baseURL: baseurl + "/auth/",
