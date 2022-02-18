@@ -1,6 +1,12 @@
 import config from "../config/config.json";
 
-const baseurl = process.env.API_ENDPOINT || config.apiEndpoint;
+let baseurl;
+if (process.env.NODE_ENV === "production") {
+    baseurl = "https://fc-client-server-docker.herokuapp.com/api";
+} else {
+    baseurl = config.apiEndpoint;
+}
+
 console.log("baseurl", baseurl);
 
 export default baseurl;
