@@ -6,7 +6,6 @@ import baseurl from "../services/baseurl";
 import config from "../config/config.json";
 
 console.log("baseurl", baseurl);
-console.log("baseurl", baseurl);
 
 const http = axios.create({
     baseURL: baseurl
