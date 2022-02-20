@@ -5,6 +5,8 @@ import localStorageService from "./localStorage.service";
 import baseurl from "../services/baseurl";
 import config from "../config/config.json";
 
+console.log(baseurl);
+
 const http = axios.create({
     baseURL: baseurl
 });
