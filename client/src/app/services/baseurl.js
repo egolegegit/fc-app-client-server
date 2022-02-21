@@ -1,12 +1,12 @@
-import config from "../config/config.json";
+// import config from "../config/config.json";
 
-let baseurl;
+// let baseurl;
 
-if (process.env.NODE_ENV === "production") {
-    baseurl = process.env.REACT_APP_BASE_URL;
-} else {
-    baseurl = config.apiEndpoint;
-}
+// if (process.env.NODE_ENV === "production") {
+const baseurl = process.env.REACT_APP_BASE_URL;
+// } else {
+//     baseurl = config.apiEndpoint;
+// }
 
 console.log("baseurl", baseurl);
 
