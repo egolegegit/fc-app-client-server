@@ -1,5 +1,4 @@
 import axios from "axios";
-import { toast } from "react-toastify";
 import authService from "./auth.service";
 import localStorageService from "./localStorage.service";
 import baseurl from "../services/baseurl";
@@ -86,8 +85,7 @@ http.interceptors.response.use(
             error.response.status < 500;
 
         if (!expectedErrors) {
-            console.log(error);
-            toast.error("Somthing was wrong. Try it later");
+            console.log(error.message);
         }
         return Promise.reject(error);
     }
