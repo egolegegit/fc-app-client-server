@@ -8,4 +8,6 @@ if (process.env.NODE_ENV === "production") {
     baseurl = config.apiEndpoint;
 }
 
+console.log("baseurl", baseurl);
+
 export default baseurl;
