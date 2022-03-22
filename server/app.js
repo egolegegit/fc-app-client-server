@@ -28,6 +28,7 @@ async function start() {
     await mongoose.connection.once("open", () => {
       initDatabase();
     });
+    console.log(chalk.blueBright(`MongoDB url: ${config.get("mongoUrl")}`));
     await mongoose.connect(config.get("mongoUrl"));
     console.log(chalk.green("MongoDB connected"));
 
